@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>‌</title>
+  <link rel="icon" type="image/x-icon" href="icons/a.ico">
+  <link href="a.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="card">
+      <img src="images/b.png" alt="Image">
+      <h2 style="top:0">about:blank</h2>
+      <p class="Apps_bdesc__939Ky">Hides <i>Screen</i> From Dyknow <p style="color:blue; text-decoration: underline; cursor: url(cursors/pointer.png) 18 0, pointer; width: 0px; margin-left: 126.5px;" onclick="window.location.href='proof'">Proof</p>
+        <div class="Apps_app__T03gY">
+        <button id="copy-text-btn">Copy</button>
+        <p id="text" hidden>javascript:(function(){var url = prompt("Enter website url for about:blank proxy"); var win = window.open(); var iframe = win.document.createElement(%27iframe%27); iframe.style="position:fixed;width:100vw;height:100vh;top:0px;left:0px;right:0px;bottom:0px;z-index:2147483647;background-color:white;border:none;"; if(url.includes('https://') || url.includes("http://")) {iframe.src = url;}else{iframe.src = "http://" + url;} win.document.body.appendChild(iframe);})();</p>
+        <script>
+          function copyText(htmlElement) {
+            if(!htmlElement) {
+              return;
+            }            
+            let elementText = htmlElement.innerText;
+            let inputElement = document.createElement('input');
+            inputElement.setAttribute('value', elementText);
+            document.body.appendChild(inputElement);
+            inputElement.select();
+            document.execCommand('copy');
+            inputElement.parentNode.removeChild(inputElement);
+          }
+
+          document.querySelector('#copy-text-btn').onclick = function() {
+            copyText(document.querySelector('#text'));
+          }
+        </script>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/d.png" alt="Image">
+      <h2 style="top:0">Anti-Tab Close</h2>
+      <p class="Apps_bdesc__939Ky">Prevents <i>Dyknow</i> From Closing Displayed Tabs</p>
+        <div class="Apps_app__T03gY">
+          <button id="openButton2" style="background:#08080;color:#FFFFFF;border-radius:15px;border:0">Execute</button>
+          <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              document.getElementById('openButton2').addEventListener('click', function() {
+                window.location.assign('javascript:(function () {window.onbeforeunload = function () { return 1;};})()');
+              });
+            });
+          </script>
+        <button id="copy-text-btn4">Copy</button>
+        <p id="text4" hidden>javascript:(function () {window.onbeforeunload = function () { return 1;};})()</p>
+        <script>
+          function copyText(htmlElement) {
+            if(!htmlElement) {
+              return;
+            }            
+            let elementText = htmlElement.innerText;
+            let inputElement = document.createElement('input');
+            inputElement.setAttribute('value', elementText);
+            document.body.appendChild(inputElement);
+            inputElement.select();
+            document.execCommand('copy');
+            inputElement.parentNode.removeChild(inputElement);
+          }
+
+          document.querySelector('#copy-text-btn4').onclick = function() {
+            copyText(document.querySelector('#text4'));
+          }
+        </script>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/c.png" alt="Image">
+      <h2 style="top:0">Edit Page</h2>
+      <p class="Apps_bdesc__939Ky">Edits <i>Anything</i> Of Your Choice (<b class="reload" style="color:blue; text-decoration: underline; cursor: url(cursors/pointer.png) 18 0, pointer;">Refresh</b> Page To Clear Edits)</p>
+        <div class="Apps_app__T03gY">
+          <button id="openButton1" style="background:#08080;color:#FFFFFF;border-radius:15px;border:0">Execute</button>
+          <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              document.getElementById('openButton1').addEventListener('click', function() {
+                window.location.assign('javascript:var _0xd53f=["\x63\x6F\x6E\x74\x65\x6E\x74\x45\x64\x69\x74\x61\x62\x6C\x65","\x62\x6F\x64\x79","\x74\x72\x75\x65","\x64\x65\x73\x69\x67\x6E\x4D\x6F\x64\x65","\x6F\x6E"];document[_0xd53f[1]][_0xd53f[0]]= _0xd53f[2];document[_0xd53f[3]]= _0xd53f[4];void(0)');
+              });
+            });
+          </script>
+          <script>
+          const refreshButton = document.querySelector('.reload');
+          refreshButton.addEventListener('click', function() {
+          location.reload();
+          });
+          </script>
+        <button id="copy-text-btn2">Copy</button>
+        <p id="text2" hidden>javascript:document.body.contentEditable = 'true'; document.designMode='on'; void 0</p>
+        <script>
+          function copyText(htmlElement) {
+            if(!htmlElement) {
+              return;
+            }            
+            let elementText = htmlElement.innerText;
+            let inputElement = document.createElement('input');
+            inputElement.setAttribute('value', elementText);
+            document.body.appendChild(inputElement);
+            inputElement.select();
+            document.execCommand('copy');
+            inputElement.parentNode.removeChild(inputElement);
+          }
+
+          document.querySelector('#copy-text-btn2').onclick = function() {
+            copyText(document.querySelector('#text2'));
+          }
+        </script>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/a.png" alt="Image">
+      <h2 style="top:0">History Flooder</h2>
+      <p class="Apps_bdesc__939Ky">Floods <i>History</i> With An Optional Amount</p>
+        <div class="Apps_app__T03gY">
+        <button id="copy-text-btn1">Copy</button>
+        <p id="text1" hidden>javascript:(e=>{var num=prompt('How Times Do You Want This Page To Show Up In Your History?%27);done=false;x=window.location.href;for (var i=1; i<=num; i++){history.pushState(0, 0, i==num?x:i.toString());if(i==num){done=true}}if(done===true){alert(%27Flooding Successful! %27+window.location.href+%27 Is Now In Your History %27+num+(num==1?%27 Time.%27:%27 Times. %27))}})()</p>
+        <script>
+          function copyText(htmlElement) {
+            if(!htmlElement) {
+              return;
+            }            
+            let elementText = htmlElement.innerText;
+            let inputElement = document.createElement('input');
+            inputElement.setAttribute('value', elementText);
+            document.body.appendChild(inputElement);
+            inputElement.select();
+            document.execCommand('copy');
+            inputElement.parentNode.removeChild(inputElement);
+          }
+          document.querySelector('#copy-text-btn1').onclick = function() {
+            copyText(document.querySelector('#text1'));
+          }
+        </script>
+        <script>
+          document.addEventListener('contextmenu', event => event.preventDefault());
+        </script>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/togglepage.gif" alt="Image">
+      <h2 style="top:0">PortaProxy</h2>
+      <p class="Apps_bdesc__939Ky">Toggle <i>Any</i> Unblocked Page That Is IFrame-Accessible</p>
+        <div class="Apps_app__T03gY">
+        <button id="copy-text-btn3">Copy</button>
+        <p id="text3" hidden>javascript:var $jscomp=$jscomp||{};$jscomp.scope={};$jscomp.createTemplateTagFirstArg=function(a){return a.raw=a};$jscomp.createTemplateTagFirstArgWithRaw=function(a,b){a.raw=b;return a};var frame=document.createElement("iframe");var url=prompt("What URL do you want to visit?");if(!url.startsWith("http://")&&!url.startsWith("https://")){url="http://"+url}frame.src=url;var stl=frame.style;stl.position="fixed";stl.left=stl.right=stl.top=stl.bottom=stl.margin=stl.border="0";stl.border="none";stl.width=stl.height="100%";stl.setProperty("z-index","9999");stl.setProperty("background-color","#FFFFFF");document.body.appendChild(frame);var btn=document.createElement("button");btn.addEventListener("click",function(){frame.style.display=frame.style.display=="none"?"block":"none"});btn.style="position: fixed;\nbottom: 0;\nright: 0;\nmargin: 20px;\nz-index: 99999;\nborder: none;\nfont-size: 14px;\npadding: 3px;\n";btn.innerHTML="Toggle";document.body.appendChild(btn);void 0;</p>
+        <script>
+          function copyText(htmlElement) {
+            if(!htmlElement) {
+              return;
+            }            
+            let elementText = htmlElement.innerText;
+            let inputElement = document.createElement('input');
+            inputElement.setAttribute('value', elementText);
+            document.body.appendChild(inputElement);
+            inputElement.select();
+            document.execCommand('copy');
+            inputElement.parentNode.removeChild(inputElement);
+          }
+
+          document.querySelector('#copy-text-btn3').onclick = function() {
+            copyText(document.querySelector('#text3'));
+          }
+        </script>
+      </div>
+    </div>
+</body>
+</html>
